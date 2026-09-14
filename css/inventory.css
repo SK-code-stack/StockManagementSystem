@@ -1,0 +1,2 @@
+@import url("styles.css");
+body[data-page="inventory"] .numeric { font-variant-numeric: tabular-nums; }

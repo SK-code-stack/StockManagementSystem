@@ -1,0 +1,2 @@
+@import url("styles.css");
+body[data-page="reports"] .dashboard-grid { grid-template-columns: 1.4fr .6fr; }

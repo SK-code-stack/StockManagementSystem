@@ -1,0 +1,2 @@
+@import url("styles.css");
+body[data-page="sales"] .table td:first-child { font-weight: 700; }

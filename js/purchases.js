@@ -1,0 +1,3 @@
+import { startListPage } from './list-page.js';
+import { money, status } from './core.js';
+startListPage({ page: 'purchases', key: 'purchases', title: 'Purchases', description: 'Track supplier orders and received inventory.', action: '<a class="btn btn-primary" href="create-purchase.html">＋ Create Purchase</a>', columns: [{ title: 'Purchase ID', key: 'id' }, { title: 'Supplier', key: 'supplier' }, { title: 'Date', key: 'date' }, { title: 'Items', key: 'items', numeric: true }, { title: 'Total', numeric: true, format: item => money(item.total) }, { title: 'Status', format: item => status(item.status) }] });

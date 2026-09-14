@@ -1,0 +1,2 @@
+@import url("styles.css");
+body[data-page="categories"] .table { min-width: 560px; }

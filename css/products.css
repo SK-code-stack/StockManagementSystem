@@ -1,0 +1,2 @@
+@import url("styles.css");
+body[data-page="products"] .table td:first-child { min-width: 240px; }

@@ -1,0 +1,2 @@
+@import url("styles.css");
+body[data-page="purchase-create"] .summary { border-top: 3px solid #10b981; }

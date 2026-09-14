@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "tertiary-container": "#006e4b",
+          "on-surface": "#131b2e",
+          "background": "#faf8ff",
+          "surface-container-low": "#f2f3ff",
+          "on-tertiary-fixed": "#002113",
+          "error": "#ba1a1a",
+          "on-tertiary": "#ffffff",
+          "tertiary-fixed-dim": "#4edea3",
+          "on-primary": "#ffffff",
+          "inverse-surface": "#283044",
+          "inverse-primary": "#c3c0ff",
+          "on-secondary-fixed-variant": "#004e5c",
+          "on-tertiary-fixed-variant": "#005236",
+          "on-primary-fixed": "#0f0069",
+          "on-secondary-container": "#006172",
+          "outline": "#777587",
+          "primary-container": "#4f46e5",
+          "error-container": "#ffdad6",
+          "on-primary-container": "#dad7ff",
+          "on-background": "#131b2e",
+          "on-secondary": "#ffffff",
+          "outline-variant": "#c7c4d8",
+          "surface-container": "#eaedff",
+          "on-error": "#ffffff",
+          "surface": "#faf8ff",
+          "surface-dim": "#d2d9f4",
+          "on-surface-variant": "#464555",
+          "surface-container-highest": "#dae2fd",
+          "surface-variant": "#dae2fd",
+          "surface-tint": "#4d44e3",
+          "primary": "#3525cd",
+          "surface-bright": "#faf8ff",
+          "secondary-fixed-dim": "#4cd7f6",
+          "primary-fixed-dim": "#c3c0ff",
+          "secondary-container": "#57dffe",
+          "on-primary-fixed-variant": "#3323cc",
+          "tertiary": "#005338",
+          "on-tertiary-container": "#67f4b7",
+          "on-error-container": "#93000a",
+          "on-secondary-fixed": "#001f26",
+          "primary-fixed": "#e2dfff",
+          "secondary": "#00687a",
+          "secondary-fixed": "#acedff",
+          "surface-container-high": "#e2e7ff",
+          "tertiary-fixed": "#6ffbbe",
+          "surface-container-lowest": "#ffffff",
+          "inverse-on-surface": "#eef0ff"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "margin-lg": "2rem",
+          "space-sm": "0.5rem",
+          "space-md": "0.75rem",
+          "gutter-lg": "1.5rem",
+          "space-lg": "1rem",
+          "space-xs": "0.25rem",
+          "margin": "1rem",
+          "margin-md": "1.5rem",
+          "space-xl": "1.5rem",
+          "gutter": "1rem"
+        },
+        "fontFamily": {
+          "body-md": [
+            "Inter"
+          ],
+          "body-sm": [
+            "Inter"
+          ],
+          "body-lg": [
+            "Inter"
+          ],
+          "headline-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Inter"
+          ],
+          "headline-xl": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Inter"
+          ],
+          "data-tabular": [
+            "Inter"
+          ]
+        },
+        "fontSize": {
+          "body-md": [
+            "14px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "-0.006em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-lg": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.011em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg": [
+            "24px",
+            {
+              "lineHeight": "32px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-sm": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.04em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-xl": [
+            "32px",
+            {
+              "lineHeight": "40px",
+              "letterSpacing": "-0.025em",
+              "fontWeight": "700"
+            }
+          ],
+          "headline-md": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.015em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "-0.005em",
+              "fontWeight": "500"
+            }
+          ],
+          "data-tabular": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "500"
+            }
+          ]
+        }
+      }
+    }
+  }</script></head><body class="bg-background font-body-md text-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="StockFlow Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1U1XTitQrQckZnAthaidcGRLovx3vlp3rlkFYixh98WrUPz-CEXGO-B0YWpVG0CI84HFf8afKh8Ji-qkP_cAVu1h-qTz6AFTls43vvXxMiWdZACf6nvbXpEzOOKmM01azaBkRje-XCquNupbTiy7h3o4hRQMM3QtzGunSYU-3Uo8v1ukD6_duJ0ZdytksEy-i0lknE4PXwRID4CRs_jyUVHxvMIhpwvywW9QnWA4TY0SyU4DxazXSeqYw"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">StockFlow</span></div><span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-lg bg-surface-container text-on-surface-variant font-medium">v2.4 Pro</span></div><div class="px-space-md py-space-xs"><div class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm mb-space-xs">Main</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary-container text-on-primary font-medium rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span><span>Dashboard</span></a></nav></div><div class="px-space-md py-space-xs"><div class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm mb-space-xs">Products &amp; Inventory</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary-container text-on-primary font-medium rounded-lg shadow-sm"><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary font-medium rounded-lg shadow-sm" data-path="products" href="#"><span class="material-symbols-outlined text-[18px]">inventory_2</span><span>Products</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="categories" href="#"><span class="material-symbols-outlined text-[18px]">category</span><span>Categories</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="inventory-stock" href="#"><span class="material-symbols-outlined text-[18px]">warehouse</span><span>Inventory</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="low-stock-alerts" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[18px]">warning</span><span>Low Stock</span></div><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-error-container text-on-error-container font-semibold">6</span></a></nav></div><div class="px-space-md py-space-xs"><div class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm mb-space-xs">Operations</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary-container text-on-primary font-medium rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="stock-in" href="#"><span class="material-symbols-outlined text-[18px]">move_to_inbox</span><span>Stock In</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="stock-out" href="#"><span class="material-symbols-outlined text-[18px]">outbox</span><span>Stock Out</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="stock-movements" href="#"><span class="material-symbols-outlined text-[18px]">swap_horiz</span><span>Stock Movements</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="adjustments" href="#"><span class="material-symbols-outlined text-[18px]">tune</span><span>Adjustments</span></a></nav></div><div class="px-space-md py-space-xs"><div class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm mb-space-xs">Commerce</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary-container text-on-primary font-medium rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="purchases" href="#"><span class="material-symbols-outlined text-[18px]">shopping_bag</span><span>Purchases</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="sales-and-pos" href="#"><span class="material-symbols-outlined text-[18px]">point_of_sale</span><span>Sales &amp; POS</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="invoices" href="#"><span class="material-symbols-outlined text-[18px]">receipt_long</span><span>Invoices</span></a></nav></div><div class="px-space-md py-space-xs"><div class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm mb-space-xs">Relations</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary-container text-on-primary font-medium rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="suppliers" href="#"><span class="material-symbols-outlined text-[18px]">local_shipping</span><span>Suppliers</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="customers" href="#"><span class="material-symbols-outlined text-[18px]">group</span><span>Customers</span></a></nav></div><div class="px-space-md py-space-xs mb-space-md"><div class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-space-sm mb-space-xs">Analytics &amp; System</div><nav class="flex flex-col gap-0.5" data-active-classes="bg-primary-container text-on-primary font-medium rounded-lg shadow-sm"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="reports-and-valuation" href="#"><span class="material-symbols-outlined text-[18px]">analytics</span><span>Reports &amp; Valuation</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors font-body-sm text-body-sm" data-path="settings" href="#"><span class="material-symbols-outlined text-[18px]">settings</span><span>Settings</span></a></nav></div></div><div class="p-space-md m-space-md rounded-xl bg-surface-container-low"><div class="flex items-center justify-between mb-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Warehouse Capacity</span><span class="font-label-sm text-label-sm font-semibold text-on-surface">84%</span></div><div class="w-full h-1.5 bg-surface-container-highest rounded-full overflow-hidden"><div class="h-full bg-primary rounded-full" style="width: 84%"></div></div><div class="mt-space-xs flex items-center justify-between"><span class="font-label-sm text-label-sm text-outline">42,150 / 50,000 SKUs</span><span class="font-label-sm text-label-sm font-semibold text-tertiary-container">Stable</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-lg"><div class="flex items-center gap-space-md flex-1 max-w-lg"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-space-sm text-outline text-[18px]">search</span><input class="w-full pl-9 pr-space-md py-1.5 rounded-lg bg-surface-container-low text-on-surface placeholder-outline font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Search SKU, product, order, supplier... [Ctrl+K]" type="text"/><div class="absolute right-space-sm px-1.5 py-0.5 rounded bg-surface-container-high text-outline font-label-sm text-label-sm font-medium">⌘K</div></div></div><div class="flex items-center gap-space-md"><div class="relative"><button class="flex items-center gap-space-xs px-space-md py-1.5 bg-primary text-on-primary rounded-lg font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-[18px]">add</span><span>Quick Add</span><span class="material-symbols-outlined text-[16px]">expand_more</span></button></div><button class="relative p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-error text-on-error font-label-sm text-[10px] font-bold">4</span></button><button class="p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">light_mode</span></button><div class="h-6 w-px bg-outline-variant"></div><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxWVO5F1HQmjU83PvDfYdB-ZIXIWUcZ1OsBr1eYG42mnJgbV9U3zuU7Ic2bGTa_HxZ_goehx3cXRPyzoFrmDzuFG4zc-bi2uMOWFeGhLyS5-oKD_aZ8Ca0DweGc2Q9wEIDn40rQGb6O1HeDTLmnHnKBZfmKPbOrTJUGEFEOBVsCPi1_P2owleIqlWU81jMitq7QBpupgZaWL_WGr2CO43Gsa8ZLYL076OZ8Rq8yNECb5QBLYSjx44"/><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-none">Elena Vance</span><span class="font-label-sm text-label-sm text-outline leading-none mt-1">Operations Lead</span></div><span class="material-symbols-outlined text-outline text-[18px]">unfold_more</span></div></div></header><main class="relative pt-16 w-full px-gutter-lg py-space-lg bg-background min-h-screen"><div class="flex flex-col w-full gap-space-lg">
+<!-- TOP CONTEXT & KPI STRIP -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex items-center justify-between">
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Total SKUs in Catalog</div>
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">1,482</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-semibold mt-1">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span>+24 this month</span>
+</div>
+</div>
+<div class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">inventory_2</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex items-center justify-between">
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Active Low Stock</div>
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">18</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-error font-semibold mt-1">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+<span>6 critical out-of-stock</span>
+</div>
+</div>
+<div class="w-11 h-11 rounded-lg bg-error-container flex items-center justify-center text-on-error-container">
+<span class="material-symbols-outlined text-[24px]">production_quantity_limits</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex items-center justify-between">
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Total Inventory Value</div>
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">$482,910</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-tertiary font-semibold mt-1">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span>
+<span>+3.8% vs last week</span>
+</div>
+</div>
+<div class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">payments</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex items-center justify-between">
+<div>
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Avg Portfolio Margin</div>
+<div class="font-headline-lg text-headline-lg text-on-surface font-bold mt-1">58.4%</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-outline font-medium mt-1">
+<span class="material-symbols-outlined text-[14px]">analytics</span>
+<span>Target: 55.0%</span>
+</div>
+</div>
+<div class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">price_change</span>
+</div>
+</div>
+</div>
+<!-- TOOLBAR & WORKFLOW ACTION AREA -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md">
+<!-- Search & Barcode Input Group -->
+<div class="flex items-center gap-space-sm flex-1 max-w-2xl">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pl-10 pr-20 h-10 bg-surface-container-low text-on-surface placeholder-outline font-body-sm text-body-sm rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:shadow-sm" id="searchInput" placeholder="Search by Product name, SKU, UPC, or scan barcode..." type="text"/>
+<div class="absolute right-2.5 top-1/2 -translate-y-1/2 flex items-center gap-1">
+<button class="hidden text-outline hover:text-on-surface p-0.5" id="clearSearchBtn" title="Clear">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-outline font-label-sm text-[10px] tracking-wide font-mono">⌘/</span>
+</div>
+</div>
+<button class="h-10 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg font-label-md text-label-md flex items-center gap-1.5 transition-colors shadow-sm" title="Scan with Optical Reader">
+<span class="material-symbols-outlined text-[20px]">qr_code_scanner</span>
+<span class="hidden sm:inline">Scan</span>
+</button>
+</div>
+<!-- Action Button Group -->
+<div class="flex items-center flex-wrap gap-space-sm justify-end">
+<button class="h-10 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg font-label-md text-label-md flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">upload_file</span>
+<span>Import CSV</span>
+</button>
+<button class="h-10 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg font-label-md text-label-md flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">sim_card_download</span>
+<span>Export</span>
+</button>
+<button class="h-10 px-space-md bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg font-label-md text-label-md flex items-center gap-1.5 transition-colors">
+<span class="material-symbols-outlined text-[18px]">barcode</span>
+<span class="hidden sm:inline">Print Labels</span>
+</button>
+<button class="h-10 px-space-lg bg-primary hover:bg-primary-container text-on-primary rounded-lg font-label-md text-label-md flex items-center gap-2 transition-all shadow-sm active:scale-[0.98]" id="openAddProductBtn">
+<span class="material-symbols-outlined text-[20px]">add</span>
+<span>Add Product</span>
+</button>
+</div>
+</div>
+<!-- Secondary Filters Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Category Dropdown -->
+<div class="relative">
+<select class="appearance-none h-8 pl-3 pr-8 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm rounded-lg focus:outline-none cursor-pointer">
+<option>Category: All</option>
+<option>Microcontrollers</option>
+<option>Fasteners &amp; Hardware</option>
+<option>Displays &amp; Panels</option>
+<option>Batteries &amp; Power</option>
+<option>Structural &amp; Framing</option>
+<option>Precision Tools</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline text-[16px] pointer-events-none">expand_more</span>
+</div>
+<!-- Supplier Dropdown -->
+<div class="relative">
+<select class="appearance-none h-8 pl-3 pr-8 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm rounded-lg focus:outline-none cursor-pointer">
+<option>Supplier: All</option>
+<option>Espressif Systems Co.</option>
+<option>Apex Industrial Fasteners</option>
+<option>VisionTech Electronics</option>
+<option>Voltanix Energy Labs</option>
+<option>PrecisionMetals AG</option>
+<option>Mitutoyo Industrial Corp</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline text-[16px] pointer-events-none">expand_more</span>
+</div>
+<!-- Stock Status Dropdown -->
+<div class="relative">
+<select class="appearance-none h-8 pl-3 pr-8 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm rounded-lg focus:outline-none cursor-pointer">
+<option>Status: All</option>
+<option>In Stock (&gt; Minimum)</option>
+<option>Low Stock (Threshold Warning)</option>
+<option>Out of Stock (Zero Units)</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline text-[16px] pointer-events-none">expand_more</span>
+</div>
+<!-- Price Range Quick Selector -->
+<div class="relative">
+<select class="appearance-none h-8 pl-3 pr-8 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm rounded-lg focus:outline-none cursor-pointer">
+<option>Price: Any Range</option>
+<option>Under $10.00</option>
+<option>$10.00 - $50.00</option>
+<option>$50.00 - $200.00</option>
+<option>&gt; $200.00</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-outline text-[16px] pointer-events-none">expand_more</span>
+</div>
+<button class="h-8 px-2.5 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>More Filters (2)</span>
+</button>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-body-sm text-body-sm text-outline">Sorted by:</span>
+<button class="h-8 px-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container font-label-sm text-label-sm text-on-surface flex items-center gap-1">
+<span>Recently Updated</span>
+<span class="material-symbols-outlined text-[16px]">south</span>
+</button>
+</div>
+</div>
+<!-- Active Filter Chips -->
+<div class="flex flex-wrap items-center gap-1.5 pt-1">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider mr-1">Active:</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span>Category: Hardware, Displays, Microcontrollers</span>
+<button class="text-outline hover:text-on-surface"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+<span>Status: All</span>
+<button class="text-outline hover:text-on-surface"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<button class="font-label-sm text-label-sm text-primary hover:text-primary-container ml-2 font-medium">Reset All</button>
+</div>
+</div>
+<!-- FLOATING/DOCKED BULK ACTIONS STRIP -->
+<div class="hidden flex-wrap items-center justify-between px-space-lg py-space-sm bg-inverse-surface text-inverse-on-surface rounded-xl shadow-lg transition-all" id="bulkActionBar">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-tertiary-fixed-dim">check_circle</span>
+<span class="font-label-md text-label-md font-semibold"><span id="selectedCount">3</span> items selected</span>
+</div>
+<div class="h-4 w-px bg-outline"></div>
+<button class="font-label-sm text-label-sm text-inverse-primary hover:underline" id="deselectAllBtn">Deselect all</button>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap">
+<button class="h-8 px-space-md bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-inverse-on-surface rounded-lg font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span>Bulk Adjust Stock</span>
+</button>
+<button class="h-8 px-space-md bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-inverse-on-surface rounded-lg font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">category</span>
+<span>Assign Category</span>
+</button>
+<button class="h-8 px-space-md bg-surface-container-lowest/15 hover:bg-surface-container-lowest/25 text-inverse-on-surface rounded-lg font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+<span>Update Supplier</span>
+</button>
+<button class="h-8 px-space-md bg-error hover:bg-error/90 text-on-error rounded-lg font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+<span>Delete Selected</span>
+</button>
+</div>
+</div>
+<!-- HIGH-DENSITY ENTERPRISE DATA TABLE -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="overflow-x-auto w-full">
+<table class="w-full border-collapse text-left">
+<thead>
+<tr class="bg-surface-container-low text-outline font-label-sm text-label-sm uppercase tracking-wider select-none">
+<th class="py-3 px-4 w-12 text-center">
+<input class="w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" id="selectAllCheckbox" type="checkbox"/>
+</th>
+<th class="py-3 px-4">Product Info</th>
+<th class="py-3 px-4">SKU / Barcode</th>
+<th class="py-3 px-4">Category</th>
+<th class="py-3 px-4">Supplier</th>
+<th class="py-3 px-4 text-right">Cost</th>
+<th class="py-3 px-4 text-right">Retail</th>
+<th class="py-3 px-4 text-right">Margin</th>
+<th class="py-3 px-4 text-left min-w-[150px]">Current Stock</th>
+<th class="py-3 px-4 text-right">Min Safe</th>
+<th class="py-3 px-4 text-center">Status</th>
+<th class="py-3 px-4 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent font-body-sm text-body-sm text-on-surface">
+<!-- ROW 1: SF-9021 ESP32-S3 IoT Development Board -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group">
+<td class="py-3.5 px-4 text-center">
+<input checked="" class="row-checkbox w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-lg object-cover bg-surface-container flex-shrink-0 shadow-sm" data-alt="Microcontroller development board electronic chip close up high tech laboratory with sleek dark PCB, golden pins, surface mount SMD parts studio lighting sharp macro product photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGP4bLslfiz43MbV4vKDfJ-NDBQmMdL3EpD5hgiGJpn90veWjwlO5D0NCE4dfLAkBVjmfnWFgqSeWKJ0WaxBSXqPuz7myGt-UZ_nbZBUyUEaSM71AqtKB0PJHF5po0zun6KfpalJwp882CRwVaf0dV5Yeylj2AN46WG5jLxqqWTEftSM_n3wgx1j2gUDIjy-ZKDPJZGweKTtXu6sN0w05ORtrkBRiY4XQXtrhZhk9Pyh6P_pjakmw"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md font-semibold text-on-surface truncate group-hover:text-primary transition-colors cursor-pointer" onclick="openDrawer('SF-9021')">ESP32-S3 IoT Development Board</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Dual-Core Xtensa LX7 • 16MB Flash • Wi-Fi/BLE</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-mono font-semibold text-on-surface">SF-9021</span>
+<span class="font-mono text-outline font-label-sm text-[11px]">840291948102</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm whitespace-nowrap">Microcontrollers</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="text-on-surface truncate block max-w-[140px]" title="Espressif Systems Co.">Espressif Systems Co.</span>
+</td>
+<td class="py-3.5 px-4 text-right font-data-tabular text-data-tabular text-outline">$4.20</td>
+<td class="py-3.5 px-4 text-right font-data-tabular text-data-tabular font-semibold text-on-surface">$12.50</td>
+<td class="py-3.5 px-4 text-right">
+<span class="font-label-sm text-label-sm font-semibold text-tertiary bg-tertiary-container/10 px-1.5 py-0.5 rounded">66.4%</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">420 pcs</span>
+<span class="text-outline">Max: 600</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 70%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 text-right font-data-tabular text-data-tabular text-outline">100</td>
+<td class="py-3.5 px-4 text-center whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-tertiary-fixed/40 text-on-tertiary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> In Stock
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 rounded text-outline hover:text-primary hover:bg-surface-container transition-colors" title="Quick Adjust Stock">
+<span class="material-symbols-outlined text-[18px]">exposure</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-primary hover:bg-surface-container transition-colors" onclick="openDrawer('SF-9021')" title="Edit">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-error hover:bg-surface-container transition-colors" title="Delete">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 2: SF-4412 M3 Hex Socket Cap Screws -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group bg-surface-container-low/20">
+<td class="py-3.5 px-4 text-center">
+<input checked="" class="row-checkbox w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-lg object-cover bg-surface-container flex-shrink-0 shadow-sm" data-alt="Pack of precision stainless steel metric hex socket head cap screws bolts organized on a neutral clean metallic engineering background high resolution sharp macro" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALilhZ3iLTYICEApzIWoOHV0z5UhR23b_tPIMMoO7wCpuN_l_r591k639X_x0GthmoUSwNOhzYYgRfQBMUfEtJuUrCvT8_c9s_y7YcJIgV-rdtSc7VxuwKrwdVC7mEg_JhC1vgQp0EIc94M0J1M-XaOXVQ2hoMcSUM_2hp4IovPCFrZQC63RxkHccc2lZ-t_L90rgsURDwSdR9KFynf5JBDGA3YIaNK7oUZ1mamxjFLxNHxzGXZjU"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md font-semibold text-on-surface truncate group-hover:text-primary transition-colors cursor-pointer" onclick="openDrawer('SF-4412')">M3 Hex Socket Cap Screws (100pk)</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Stainless Steel 304 • DIN 912 • 12mm</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-mono font-semibold text-on-surface">SF-4412</span>
+<span class="font-mono text-outline font-label-sm text-[11px]">840291948831</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm whitespace-nowrap">Fasteners</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="text-on-surface truncate block max-w-[140px]" title="Apex Industrial Fasteners">Apex Fasteners</span>
+</td>
+<td class="py-3.5 px-4 text-right font-data-tabular text-data-tabular text-outline">$2.10</td>
+<td class="py-3.5 px-4 text-right font-data-tabular text-data-tabular font-semibold text-on-surface">$5.80</td>
+<td class="py-3.5 px-4 text-right">
+<span class="font-label-sm text-label-sm font-semibold text-tertiary bg-tertiary-container/10 px-1.5 py-0.5 rounded">63.7%</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">34 pks</span>
+<span class="text-error font-medium">Under Target</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full" style="width: 34%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 text-right font-data-tabular text-data-tabular text-outline font-semibold">50</td>
+<td class="py-3.5 px-4 text-center whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-secondary-fixed text-on-secondary-fixed-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Low Stock
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 rounded text-outline hover:text-primary hover:bg-surface-container transition-colors" title="Quick Adjust Stock">
+<span class="material-symbols-outlined text-[18px]">exposure</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-primary hover:bg-surface-container transition-colors" onclick="openDrawer('SF-4412')" title="Edit">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-error hover:bg-surface-container transition-colors" title="Delete">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 3: SF-1099 10.1" IPS Capacitive Touch Display -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group">
+<td class="py-3.5 px-4 text-center">
+<input checked="" class="row-checkbox w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-lg object-cover bg-surface-container flex-shrink-0 shadow-sm" data-alt="Modern IPS LCD capacitive touch display panel module with HDMI driver board ribbon cables industrial grade product photography sharp clean reflection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3iQxkFNQMv_iKMH9vSS0bZQq1T6RWzcidmSpxzf7RcjqHzw9zLD8fsaYWQMP7jjAJI0CJgJb2b32LjwNm3UtFI7U9Lv5orc4H0H6s5QD0uu-cTXVXAYCuWCy4j6oWf9Uj9XQ9nqTJpvmi1bzD4u8LTN6rF2R3KM0444Yi8OJ-vaQTkXAk_-lYbRHCHld1dfC3XvPCp9VWeyzgRbZNDCjAbq-UCmWpj82o0NyMzM4Hes13L7TWoWM"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md font-semibold text-on-surface truncate group-hover:text-primary transition-colors cursor-pointer" onclick="openDrawer('SF-1099')">10.1" IPS Capacitive Touch Display</span>
+<span class="font-body-sm text-body-sm text-outline truncate">1920x1200 • HDMI / USB Touch • 450 Nits</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-mono font-semibold text-on-surface">SF-1099</span>
+<span class="font-mono text-outline font-label-sm text-[11px]">840291941099</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm whitespace-nowrap">Displays</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="text-on-surface truncate block max-w-[140px]" title="VisionTech Electronics">VisionTech</span>
+</td>
+<td class="py-3.5 px-4 text-right font-data-tabular text-data-tabular text-outline">$32.00</td>
+<td class="py-3.5 px-4 text-right font-data-tabular text-data-tabular font-semibold text-on-surface">$68.00</td>
+<td class="py-3.5 px-4 text-right">
+<span class="font-label-sm text-label-sm font-semibold text-tertiary bg-tertiary-container/10 px-1.5 py-0.5 rounded">52.9%</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-error">0 units</span>
+<span class="text-outline">PO #4920 Pending</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 0%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 text-right font-data-tabular text-data-tabular text-outline font-semibold">20</td>
+<td class="py-3.5 px-4 text-center whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-error-container text-on-error-container">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span> Out of Stock
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 rounded text-outline hover:text-primary hover:bg-surface-container transition-colors" title="Quick Adjust Stock">
+<span class="material-symbols-outlined text-[18px]">exposure</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-primary hover:bg-surface-container transition-colors" onclick="openDrawer('SF-1099')" title="Edit">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-error hover:bg-surface-container transition-colors" title="Delete">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 4: SF-8820 LiPo Battery Pack -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group">
+<td class="py-3.5 px-4 text-center">
+<input class="row-checkbox w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-lg object-cover bg-surface-container flex-shrink-0 shadow-sm" data-alt="Lithium polymer battery pack rechargeable cell with JST connector lead wires and safety warning labels studio tech shot on neutral slate background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNEgTn20QYqpS2v5luulDc-i7QtQBC1ycLtwNOt6c2meNJiQU7hTe8AXOi7OZYGnzSSIP2Av1tf4e9Le38c18XAIgnWeud1_7T4XP4MHehTTedD9gBtQm1Oxqqq-vZ7jYz76xjw8smeXv8oopkfdXSBWkpSkehBS_afF8rLkVdol5-fzY1bfhfuu5EsGBlpk3GiySI9yypuTj5BIi41xigoBNL3qCfDHHwgFkKSW8qev6mcrUjfdw"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md font-semibold text-on-surface truncate group-hover:text-primary transition-colors cursor-pointer" onclick="openDrawer('SF-8820')">LiPo Battery Pack 3.7V 2500mAh</span>
+<span class="font-body-sm text-body-sm text-outline truncate">1S1P • Integrated PCM Protection • JST-PH 2.0</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-mono font-semibold text-on-surface">SF-8820</span>
+<span class="font-mono text-outline font-label-sm text-[11px]">840291948820</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm whitespace-nowrap">Batteries</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="text-on-surface truncate block max-w-[140px]" title="Voltanix Energy Labs">Voltanix Labs</span>
+</td>
+<td class="py-3.5 px-4 text-right font-data-tabular text-data-tabular text-outline">$6.80</td>
+<td class="py-3.5 px-4 text-right font-data-tabular text-data-tabular font-semibold text-on-surface">$16.00</td>
+<td class="py-3.5 px-4 text-right">
+<span class="font-label-sm text-label-sm font-semibold text-tertiary bg-tertiary-container/10 px-1.5 py-0.5 rounded">57.5%</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">850 units</span>
+<span class="text-outline">Max: 1000</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 85%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 text-right font-data-tabular text-data-tabular text-outline">200</td>
+<td class="py-3.5 px-4 text-center whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-tertiary-fixed/40 text-on-tertiary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> In Stock
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 rounded text-outline hover:text-primary hover:bg-surface-container transition-colors" title="Quick Adjust Stock">
+<span class="material-symbols-outlined text-[18px]">exposure</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-primary hover:bg-surface-container transition-colors" onclick="openDrawer('SF-8820')" title="Edit">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-error hover:bg-surface-container transition-colors" title="Delete">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 5: SF-3011 Aluminum Extrusion 2020 1m -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group bg-surface-container-low/20">
+<td class="py-3.5 px-4 text-center">
+<input class="row-checkbox w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-lg object-cover bg-surface-container flex-shrink-0 shadow-sm" data-alt="Anodized silver T-slot aluminum extrusion rail profile 2020 architectural framing modular industrial hardware macro product photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPWozXc1LjoT19J3vUy0Q-SJTYZDwXNF0dGpOwz2s_NVMEJLvsQ1CgHDQ8f7VK3YLlNV2AEvV5UBaTVpcretflkE_Gqna4gSb2_NFx1flrSM6iL82L8J1chzyu2mGhJ_8H2aN9Sfbm0-Fua4uXcbU3nU5W5TCezdSnbHyyGd8zwUPsBhDmSNO1Ph2ceWUpVRFely7dqWxo-z0H1z9tIq7khEt6hxix8hp2okIlkPkUSZV9x3_RBhI"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md font-semibold text-on-surface truncate group-hover:text-primary transition-colors cursor-pointer" onclick="openDrawer('SF-3011')">Aluminum Extrusion 2020 (1m)</span>
+<span class="font-body-sm text-body-sm text-outline truncate">Clear Anodized 6063-T5 • T-Slot 6mm</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-mono font-semibold text-on-surface">SF-3011</span>
+<span class="font-mono text-outline font-label-sm text-[11px]">840291943011</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm whitespace-nowrap">Structural</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="text-on-surface truncate block max-w-[140px]" title="PrecisionMetals AG">PrecisionMetals</span>
+</td>
+<td class="py-3.5 px-4 text-right font-data-tabular text-data-tabular text-outline">$8.50</td>
+<td class="py-3.5 px-4 text-right font-data-tabular text-data-tabular font-semibold text-on-surface">$19.90</td>
+<td class="py-3.5 px-4 text-right">
+<span class="font-label-sm text-label-sm font-semibold text-tertiary bg-tertiary-container/10 px-1.5 py-0.5 rounded">57.3%</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">12 pcs</span>
+<span class="text-error font-medium">Reorder Alert</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full" style="width: 25%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 text-right font-data-tabular text-data-tabular text-outline font-semibold">40</td>
+<td class="py-3.5 px-4 text-center whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-secondary-fixed text-on-secondary-fixed-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Low Stock
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 rounded text-outline hover:text-primary hover:bg-surface-container transition-colors" title="Quick Adjust Stock">
+<span class="material-symbols-outlined text-[18px]">exposure</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-primary hover:bg-surface-container transition-colors" onclick="openDrawer('SF-3011')" title="Edit">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-error hover:bg-surface-container transition-colors" title="Delete">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 6: SF-7734 Precision Digital Caliper -->
+<tr class="hover:bg-surface-container-low/70 transition-colors group">
+<td class="py-3.5 px-4 text-center">
+<input class="row-checkbox w-4 h-4 rounded text-primary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<img class="w-10 h-10 rounded-lg object-cover bg-surface-container flex-shrink-0 shadow-sm" data-alt="Digital vernier caliper stainless steel precision micrometer measuring instrument displayed with LCD readout crisp workbench studio photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALvJb873XVq-eOBezplAQYWSj4d12cqL2eFsoBojJKEdawb6CCm56j2BAQJr2Lmo9DODa6OUev3r4LbClQsigXC-z4U8UhdffH5dLCKWujc8EgKV8feRsgiB3LPvq4N4fXTYsldvPNq2ZKZYv_iEIp6e7vJ-uZMWAEbkeDiDhTD4vM0z3stGFqtyDAtId3HdwLo91MV37C389vfBSDWCajbUYgvBdOD4rn9REEAdGDls0PX3qRvHw"/>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-body-md font-semibold text-on-surface truncate group-hover:text-primary transition-colors cursor-pointer" onclick="openDrawer('SF-7734')">Precision Digital Caliper</span>
+<span class="font-body-sm text-body-sm text-outline truncate">0-150mm / 0.01mm • Stainless Hardened • IP54</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-mono font-semibold text-on-surface">SF-7734</span>
+<span class="font-mono text-outline font-label-sm text-[11px]">840291947734</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm whitespace-nowrap">Tools</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="text-on-surface truncate block max-w-[140px]" title="Mitutoyo Industrial Corp">Mitutoyo Corp</span>
+</td>
+<td class="py-3.5 px-4 text-right font-data-tabular text-data-tabular text-outline">$14.00</td>
+<td class="py-3.5 px-4 text-right font-data-tabular text-data-tabular font-semibold text-on-surface">$34.99</td>
+<td class="py-3.5 px-4 text-right">
+<span class="font-label-sm text-label-sm font-semibold text-tertiary bg-tertiary-container/10 px-1.5 py-0.5 rounded">60.0%</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="font-semibold text-on-surface">145 pcs</span>
+<span class="text-outline">Max: 200</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 72%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 text-right font-data-tabular text-data-tabular text-outline">30</td>
+<td class="py-3.5 px-4 text-center whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-semibold bg-tertiary-fixed/40 text-on-tertiary-fixed">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> In Stock
+              </span>
+</td>
+<td class="py-3.5 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1 rounded text-outline hover:text-primary hover:bg-surface-container transition-colors" title="Quick Adjust Stock">
+<span class="material-symbols-outlined text-[18px]">exposure</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-primary hover:bg-surface-container transition-colors" onclick="openDrawer('SF-7734')" title="Edit">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 rounded text-outline hover:text-error hover:bg-surface-container transition-colors" title="Delete">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- PAGINATION FOOTER -->
+<div class="flex flex-col sm:flex-row items-center justify-between px-space-lg py-space-md bg-surface-container-lowest gap-space-sm">
+<div class="flex items-center gap-space-md">
+<span class="font-body-sm text-body-sm text-on-surface-variant">
+          Showing <span class="font-semibold text-on-surface">1 - 6</span> of <span class="font-semibold text-on-surface">1,482</span> items
+        </span>
+<div class="flex items-center gap-1.5">
+<span class="font-body-sm text-body-sm text-outline">Per page:</span>
+<select class="bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded px-2 py-1 focus:outline-none cursor-pointer">
+<option>10</option>
+<option>25</option>
+<option>50</option>
+<option>100</option>
+</select>
+</div>
+</div>
+<!-- Page Numbers Navigation -->
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container flex items-center justify-center disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-semibold flex items-center justify-center shadow-sm">1</button>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container-low font-label-sm text-label-sm flex items-center justify-center">2</button>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container-low font-label-sm text-label-sm flex items-center justify-center">3</button>
+<span class="w-8 text-center text-outline font-label-sm text-label-sm">...</span>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container-low font-label-sm text-label-sm flex items-center justify-center">149</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- SLIDE-OUT PRODUCT DRAWER & BACKDROP -->
+<div class="fixed inset-0 bg-inverse-surface/40 backdrop-blur-sm z-50 transition-opacity opacity-0 pointer-events-none duration-300" id="drawerBackdrop"></div>
+<div class="fixed right-0 top-0 h-full w-full max-w-xl bg-surface-container-lowest shadow-2xl z-50 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out" id="productDrawer">
+<!-- Drawer Header -->
+<div class="px-space-xl py-space-lg bg-surface-container-low flex items-center justify-between">
+<div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-semibold" id="drawerBadge">SKU Specification</span>
+<span class="font-mono font-semibold text-on-surface" id="drawerSkuId">SF-NEW</span>
+</div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-surface mt-1" id="drawerTitle">Add New Product</h3>
+</div>
+<button class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center" id="closeDrawerBtn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- Drawer Content Scroll Area -->
+<div class="flex-1 overflow-y-auto px-space-xl py-space-lg flex flex-col gap-space-lg">
+<!-- Image Upload Strip -->
+<div>
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline block mb-2">Product Media &amp; Asset</label>
+<div class="flex items-center gap-space-md p-space-md rounded-xl bg-surface-container-low">
+<img class="w-16 h-16 rounded-lg object-cover bg-surface-container flex-shrink-0 shadow-sm" data-alt="Modern technical electronics component studio shot on pure clean background high precision product photography" id="drawerProductImg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhiIU1lBuUzDqvxpDFF6ey4dy00Vy-SILzZEkb6jUyYm0LRijb5-8qhw3EgJBqMisj7RP0wzMrm-XRXYpdt0aQRBvACfC-1vHdkRw0Qjt6xt6Mn2mquwE3aJW91myIrI_Y7hP4PqKxSacAf5CUO1R7CwGfCrk7PaWHMkzqr-vrNIaZWUQovVtHIz4VFxHzHasUyXVdpdz3mAi4ifOE1H8IEjFf2Gt9ZQjliIohLuojO_AVC7eMd14"/>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<button class="px-space-md py-1.5 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm font-medium hover:bg-primary-container">Upload Photo</button>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface">Remove</button>
+</div>
+<span class="font-body-sm text-[11px] text-outline">Supported formats: JPG, PNG, WebP up to 5MB</span>
+</div>
+</div>
+</div>
+<!-- Core Identification -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="md:col-span-2">
+<label class="font-label-sm text-label-sm font-semibold text-on-surface block mb-1">Product Title *</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary" id="formTitle" placeholder="e.g., ESP32-S3 IoT Development Board" type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm font-semibold text-on-surface block mb-1">SKU Code *</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-mono text-body-sm focus:outline-none focus:ring-1 focus:ring-primary" id="formSku" placeholder="e.g., SF-9021" type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm font-semibold text-on-surface block mb-1">Barcode / UPC / EAN</label>
+<div class="relative">
+<input class="w-full h-10 pl-3 pr-9 rounded-lg bg-surface-container-low text-on-surface font-mono text-body-sm focus:outline-none focus:ring-1 focus:ring-primary" id="formBarcode" placeholder="e.g., 840291948102" type="text"/>
+<button class="absolute right-2.5 top-1/2 -translate-y-1/2 text-outline hover:text-primary">
+<span class="material-symbols-outlined text-[18px]">barcode_scanner</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Classification -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="font-label-sm text-label-sm font-semibold text-on-surface block mb-1">Category *</label>
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer" id="formCategory">
+<option>Microcontrollers</option>
+<option>Fasteners &amp; Hardware</option>
+<option>Displays &amp; Panels</option>
+<option>Batteries &amp; Power</option>
+<option>Structural &amp; Framing</option>
+<option>Precision Tools</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm font-semibold text-on-surface block mb-1">Primary Supplier *</label>
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer" id="formSupplier">
+<option>Espressif Systems Co.</option>
+<option>Apex Industrial Fasteners</option>
+<option>VisionTech Electronics</option>
+<option>Voltanix Energy Labs</option>
+<option>PrecisionMetals AG</option>
+<option>Mitutoyo Industrial Corp</option>
+</select>
+</div>
+</div>
+<!-- Financial Modeling -->
+<div class="p-space-md rounded-xl bg-surface-container-low/60 flex flex-col gap-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Pricing &amp; Margins</span>
+<div class="grid grid-cols-3 gap-space-sm">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Buy Price ($)</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest text-on-surface font-data-tabular text-body-sm focus:outline-none focus:ring-1 focus:ring-primary" id="formBuyPrice" step="0.01" type="number" value="4.20"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Selling Price ($)</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-lowest text-on-surface font-data-tabular text-body-sm focus:outline-none focus:ring-1 focus:ring-primary" id="formSellPrice" step="0.01" type="number" value="12.50"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Est. Margin</label>
+<div class="h-10 px-3 rounded-lg bg-surface-container flex items-center font-data-tabular text-label-md font-bold text-tertiary">
+              66.4%
+            </div>
+</div>
+</div>
+</div>
+<!-- Stock Thresholds & Warehousing -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div>
+<label class="font-label-sm text-label-sm font-semibold text-on-surface block mb-1">Current Stock *</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-data-tabular text-body-sm focus:outline-none focus:ring-1 focus:ring-primary" id="formCurrentStock" type="number" value="420"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm font-semibold text-on-surface block mb-1">Min. Threshold *</label>
+<input class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-data-tabular text-body-sm focus:outline-none focus:ring-1 focus:ring-primary" id="formMinStock" type="number" value="100"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm font-semibold text-on-surface block mb-1">Unit of Measure</label>
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary cursor-pointer">
+<option>Pieces (pcs)</option>
+<option>Packs (100pk)</option>
+<option>Meters (m)</option>
+<option>Boxes (box)</option>
+</select>
+</div>
+</div>
+<!-- Status Toggle & Warehouse Location -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Publish Catalog Status</span>
+<span class="font-body-sm text-body-sm text-outline">Available for automatic POS order dispatch</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+<!-- Drawer Sticky Action Footer -->
+<div class="px-space-xl py-space-md bg-surface-container-low flex items-center justify-between gap-space-md">
+<button class="px-space-lg h-10 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-colors" id="cancelDrawerBtn">
+        Cancel
+      </button>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md h-10 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors">
+          Save &amp; Add Another
+        </button>
+<button class="px-space-lg h-10 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md font-semibold shadow-sm transition-all active:scale-[0.98]" id="saveDrawerBtn">
+          Save Product
+        </button>
+</div>
+</div>
+</div>
+</div>
+<!-- INTERACTIVE SCRIPT -->
+<script>
+  (function initProductCatalog() {
+    // Bulk selection logic
+    const selectAllCheckbox = document.getElementById('selectAllCheckbox');
+    const rowCheckboxes = document.querySelectorAll('.row-checkbox');
+    const bulkActionBar = document.getElementById('bulkActionBar');
+    const selectedCountSpan = document.getElementById('selectedCount');
+    const deselectAllBtn = document.getElementById('deselectAllBtn');
+
+    function updateBulkBar() {
+      const selected = Array.from(rowCheckboxes).filter(cb => cb.checked).length;
+      if (selectedCountSpan) selectedCountSpan.textContent = selected;
+      
+      if (selected > 0) {
+        bulkActionBar?.classList.remove('hidden');
+        bulkActionBar?.classList.add('flex');
+      } else {
+        bulkActionBar?.classList.add('hidden');
+        bulkActionBar?.classList.remove('flex');
+      }
+
+      if (selectAllCheckbox) {
+        selectAllCheckbox.checked = selected === rowCheckboxes.length && rowCheckboxes.length > 0;
+        selectAllCheckbox.indeterminate = selected > 0 && selected < rowCheckboxes.length;
+      }
+    }
+
+    selectAllCheckbox?.addEventListener('change', (e) => {
+      rowCheckboxes.forEach(cb => { cb.checked = e.target.checked; });
+      updateBulkBar();
+    });
+
+    rowCheckboxes.forEach(cb => {
+      cb.addEventListener('change', updateBulkBar);
+    });
+
+    deselectAllBtn?.addEventListener('click', () => {
+      rowCheckboxes.forEach(cb => { cb.checked = false; });
+      if (selectAllCheckbox) selectAllCheckbox.checked = false;
+      updateBulkBar();
+    });
+
+    // Drawer toggling & mock data injection
+    const drawer = document.getElementById('productDrawer');
+    const backdrop = document.getElementById('drawerBackdrop');
+    const openAddBtn = document.getElementById('openAddProductBtn');
+    const closeDrawerBtn = document.getElementById('closeDrawerBtn');
+    const cancelDrawerBtn = document.getElementById('cancelDrawerBtn');
+    const saveDrawerBtn = document.getElementById('saveDrawerBtn');
+
+    const drawerTitle = document.getElementById('drawerTitle');
+    const drawerSkuId = document.getElementById('drawerSkuId');
+    const formTitle = document.getElementById('formTitle');
+    const formSku = document.getElementById('formSku');
+    const formBarcode = document.getElementById('formBarcode');
+    const formBuyPrice = document.getElementById('formBuyPrice');
+    const formSellPrice = document.getElementById('formSellPrice');
+    const formCurrentStock = document.getElementById('formCurrentStock');
+    const formMinStock = document.getElementById('formMinStock');
+
+    const mockCatalog = {
+      'SF-9021': {
+        title: 'ESP32-S3 IoT Development Board',
+        sku: 'SF-9021',
+        barcode: '840291948102',
+        buy: 4.20,
+        sell: 12.50,
+        stock: 420,
+        min: 100
+      },
+      'SF-4412': {
+        title: 'M3 Hex Socket Cap Screws (100pk)',
+        sku: 'SF-4412',
+        barcode: '840291948831',
+        buy: 2.10,
+        sell: 5.80,
+        stock: 34,
+        min: 50
+      },
+      'SF-1099': {
+        title: '10.1" IPS Capacitive Touch Display',
+        sku: 'SF-1099',
+        barcode: '840291941099',
+        buy: 32.00,
+        sell: 68.00,
+        stock: 0,
+        min: 20
+      },
+      'SF-8820': {
+        title: 'LiPo Battery Pack 3.7V 2500mAh',
+        sku: 'SF-8820',
+        barcode: '840291948820',
+        buy: 6.80,
+        sell: 16.00,
+        stock: 850,
+        min: 200
+      },
+      'SF-3011': {
+        title: 'Aluminum Extrusion 2020 (1m)',
+        sku: 'SF-3011',
+        barcode: '840291943011',
+        buy: 8.50,
+        sell: 19.90,
+        stock: 12,
+        min: 40
+      },
+      'SF-7734': {
+        title: 'Precision Digital Caliper',
+        sku: 'SF-7734',
+        barcode: '840291947734',
+        buy: 14.00,
+        sell: 34.99,
+        stock: 145,
+        min: 30
+      }
+    };
+
+    window.openDrawer = function(sku) {
+      if (!drawer || !backdrop) return;
+      const data = mockCatalog[sku];
+      if (data) {
+        if (drawerTitle) drawerTitle.textContent = 'Edit Product';
+        if (drawerSkuId) drawerSkuId.textContent = data.sku;
+        if (formTitle) formTitle.value = data.title;
+        if (formSku) formSku.value = data.sku;
+        if (formBarcode) formBarcode.value = data.barcode;
+        if (formBuyPrice) formBuyPrice.value = data.buy;
+        if (formSellPrice) formSellPrice.value = data.sell;
+        if (formCurrentStock) formCurrentStock.value = data.stock;
+        if (formMinStock) formMinStock.value = data.min;
+      } else {
+        if (drawerTitle) drawerTitle.textContent = 'Add New Product';
+        if (drawerSkuId) drawerSkuId.textContent = 'SF-NEW';
+        if (formTitle) formTitle.value = '';
+        if (formSku) formSku.value = 'SF-' + Math.floor(1000 + Math.random() * 9000);
+        if (formBarcode) formBarcode.value = '8402919' + Math.floor(10000 + Math.random() * 90000);
+        if (formBuyPrice) formBuyPrice.value = '0.00';
+        if (formSellPrice) formSellPrice.value = '0.00';
+        if (formCurrentStock) formCurrentStock.value = '0';
+        if (formMinStock) formMinStock.value = '10';
+      }
+
+      drawer.classList.remove('translate-x-full');
+      backdrop.classList.remove('opacity-0', 'pointer-events-none');
+      backdrop.classList.add('opacity-100');
+    };
+
+    function closeDrawer() {
+      if (!drawer || !backdrop) return;
+      drawer.classList.add('translate-x-full');
+      backdrop.classList.remove('opacity-100');
+      backdrop.classList.add('opacity-0', 'pointer-events-none');
+    }
+
+    openAddBtn?.addEventListener('click', () => window.openDrawer(null));
+    closeDrawerBtn?.addEventListener('click', closeDrawer);
+    cancelDrawerBtn?.addEventListener('click', closeDrawer);
+    backdrop?.addEventListener('click', closeDrawer);
+    saveDrawerBtn?.addEventListener('click', () => {
+      closeDrawer();
+    });
+
+    // Search bar helper
+    const searchInput = document.getElementById('searchInput');
+    const clearSearchBtn = document.getElementById('clearSearchBtn');
+
+    searchInput?.addEventListener('input', (e) => {
+      if (clearSearchBtn) {
+        if (e.target.value.trim().length > 0) {
+          clearSearchBtn.classList.remove('hidden');
+        } else {
+          clearSearchBtn.classList.add('hidden');
+        }
+      }
+    });
+
+    clearSearchBtn?.addEventListener('click', () => {
+      if (searchInput) {
+        searchInput.value = '';
+        clearSearchBtn.classList.add('hidden');
+        searchInput.focus();
+      }
+    });
+
+    // Initial state trigger
+    updateBulkBar();
+  })();
+</script></main></div></body></html>
