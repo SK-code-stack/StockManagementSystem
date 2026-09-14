@@ -1,2 +1,4 @@
-@import url("styles.css");
-body[data-page="adjustments"] .form-card { max-width: 760px; }
+@import url('styles.css');
+body[data-page='adjustments'] .form-card {
+  max-width: 760px;
+}

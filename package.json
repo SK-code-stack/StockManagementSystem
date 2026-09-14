@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "format": "prettier --write \"*.html\" \"css/**/*.css\" \"js/**/*.js\" \".vscode/**/*.json\""
+  },
+  "devDependencies": {
+    "prettier": "3.9.6"
+  }
+}

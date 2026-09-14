@@ -1,2 +1,4 @@
-@import url("styles.css");
-body[data-page="sale-create"] .summary { border-top: 3px solid #4f46e5; }
+@import url('styles.css');
+body[data-page='sale-create'] .summary {
+  border-top: 3px solid #4f46e5;
+}

@@ -1,4 +1,42 @@
 import { $, read, write, id, shell, toast } from './core.js';
 let data = read();
-function render() { shell('adjustments', 'Stock Adjustment', 'Correct stock levels after a count, loss, or other event.', `<div class="card form-card"><form id="adjustment-form" class="form-grid"><div class="field full"><label>Product</label><select name="product">${data.products.map(product => `<option value="${product.id}">${product.name} (${product.stock} available)</option>`).join('')}</select></div><div class="field"><label>Adjustment type</label><select name="type"><option>Increase</option><option>Decrease</option><option>Set Stock</option></select></div><div class="field"><label>Quantity</label><input name="quantity" type="number" min="0" required></div><div class="field full"><label>Reason</label><input name="reason" required placeholder="Cycle count correction"></div><div class="field full"><label>Notes</label><textarea name="notes"></textarea></div><div><button class="btn btn-primary">Save adjustment</button></div></form></div>`); $('#adjustment-form').onsubmit = event => { event.preventDefault(); const values = Object.fromEntries(new FormData(event.currentTarget)); const product = data.products.find(item => item.id === values.product), previous = product.stock, amount = Number(values.quantity); const current = values.type === 'Increase' ? previous + amount : values.type === 'Decrease' ? previous - amount : amount; if (current < 0 && !data.settings.allowNegative) return toast('Negative stock is not allowed.', 'danger'); product.stock = current; data.movements.unshift({ id: id('mov'), date: new Date().toLocaleString(), product: product.name, sku: product.sku, type: 'Adjustment', quantity: current - previous, previous, current, reference: `ADJ-${Date.now().toString().slice(-5)}`, notes: values.reason }); write(data); toast('Stock adjustment saved.'); event.currentTarget.reset(); }; }
+function render() {
+  shell(
+    'adjustments',
+    'Stock Adjustment',
+    'Correct stock levels after a count, loss, or other event.',
+    `<div class="card form-card"><form id="adjustment-form" class="form-grid"><div class="field full"><label>Product</label><select name="product">${data.products.map((product) => `<option value="${product.id}">${product.name} (${product.stock} available)</option>`).join('')}</select></div><div class="field"><label>Adjustment type</label><select name="type"><option>Increase</option><option>Decrease</option><option>Set Stock</option></select></div><div class="field"><label>Quantity</label><input name="quantity" type="number" min="0" required></div><div class="field full"><label>Reason</label><input name="reason" required placeholder="Cycle count correction"></div><div class="field full"><label>Notes</label><textarea name="notes"></textarea></div><div><button class="btn btn-primary">Save adjustment</button></div></form></div>`
+  );
+  $('#adjustment-form').onsubmit = (event) => {
+    event.preventDefault();
+    const values = Object.fromEntries(new FormData(event.currentTarget));
+    const product = data.products.find((item) => item.id === values.product),
+      previous = product.stock,
+      amount = Number(values.quantity);
+    const current =
+      values.type === 'Increase'
+        ? previous + amount
+        : values.type === 'Decrease'
+          ? previous - amount
+          : amount;
+    if (current < 0 && !data.settings.allowNegative)
+      return toast('Negative stock is not allowed.', 'danger');
+    product.stock = current;
+    data.movements.unshift({
+      id: id('mov'),
+      date: new Date().toLocaleString(),
+      product: product.name,
+      sku: product.sku,
+      type: 'Adjustment',
+      quantity: current - previous,
+      previous,
+      current,
+      reference: `ADJ-${Date.now().toString().slice(-5)}`,
+      notes: values.reason,
+    });
+    write(data);
+    toast('Stock adjustment saved.');
+    event.currentTarget.reset();
+  };
+}
 render();

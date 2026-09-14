@@ -1,2 +1,4 @@
-@import url("styles.css");
-body[data-page="suppliers"] .table td:nth-child(4) { color: var(--muted); }
+@import url('styles.css');
+body[data-page='suppliers'] .table td:nth-child(4) {
+  color: var(--muted);
+}

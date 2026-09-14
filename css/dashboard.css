@@ -1,2 +1,4 @@
-@import url("styles.css");
-body[data-page="dashboard"] .kpi-icon { background: #eeedff; }
+@import url('styles.css');
+body[data-page='dashboard'] .kpi-icon {
+  background: #eeedff;
+}

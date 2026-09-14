@@ -1,2 +1,4 @@
-@import url("styles.css");
-body[data-page="purchases"] .table td:first-child { font-weight: 700; }
+@import url('styles.css');
+body[data-page='purchases'] .table td:first-child {
+  font-weight: 700;
+}

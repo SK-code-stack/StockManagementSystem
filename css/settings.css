@@ -1,2 +1,4 @@
-@import url("styles.css");
-body[data-page="settings"] .settings-section { max-width: 850px; }
+@import url('styles.css');
+body[data-page='settings'] .settings-section {
+  max-width: 850px;
+}

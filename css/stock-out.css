@@ -1,2 +1,4 @@
-@import url("styles.css");
-body[data-page="stock-out"] .pick-product { border-left: 3px solid #4f46e5; }
+@import url('styles.css');
+body[data-page='stock-out'] .pick-product {
+  border-left: 3px solid #4f46e5;
+}

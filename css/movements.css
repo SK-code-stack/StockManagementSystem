@@ -1,2 +1,4 @@
-@import url("styles.css");
-body[data-page="movements"] .table td:nth-child(5) { font-weight: 700; }
+@import url('styles.css');
+body[data-page='movements'] .table td:nth-child(5) {
+  font-weight: 700;
+}
